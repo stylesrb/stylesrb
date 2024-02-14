@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ples u 2D</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://pics.craiyon.com/2023-05-25/a58ca7c117ab4fee8ea029dcb88d46d5.webp'); /* Postavljena pozadina */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .container {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    text-align: center; /* Centriranje sadržaja */
+  }
+
+  .couple {
+    width: 100%; /* Širina slike će biti 100% containera */
+    height: auto; /* Automatska visina kako bi se očuvali proporcije */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 50px; /* Da bi se ostavio prostor za tekst ispod slike */
+    margin: auto; /* Centriranje slike */
+    clip-path: polygon(40% 0%, 60% 0%, 60% 100%, 40% 100%); /* Izrezivanje slike tako da se vide samo osobe */
+  }
+
+  .text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; /* Bela boja teksta */
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <img class="couple" src="https://ocdn.eu/pulscms-transforms/1/aNdk9kpTURBXy8xOTQ2MWE3MWZmOTM4MTM4MDEzNDZjOTFiMzc4NWQxNC5qcGeRkwLNBLAA3gABoTAF" alt="Couple Dancing">
+  <div class="text">
+    <p>Da li ste za ples, Nale?</p>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
